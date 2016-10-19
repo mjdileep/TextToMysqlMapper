@@ -1,0 +1,62 @@
+{
+  "1":{
+    "GeneralForm":"where can I buy some around rupees?",
+    "originalQuery": "select xxx0 from Data where price between (xxx1-100) and (xxx1+100)",
+    "replaces":{
+    "xxx0":"food,vehicle,toy",
+    "xxx1":"price"
+     },
+    "properties":{
+    "time":"0",
+    "price":"1"
+    }
+  },
+
+  "2":{
+    "GeneralForm":"What are the available ?",
+    "originalQuery": "select xxx0 from Data",
+    "replaces":{
+    "xxx0":"food,vehicle,toy"
+     },
+    "properties":{
+    "time":"0",
+    "price":"0"
+    }
+  },
+  "3":{
+    "GeneralForm":"What is the of a ?",
+    "originalQuery": "select xxx0 from Data where name= xxx1",
+    "replaces":{
+    "xxx0":"attribute",
+    "xxx1":"food,vehicle,toy"
+     },
+    "properties":{
+    "time":"0",
+    "price":"0"
+    }
+  },
+  "4":{
+    "GeneralForm":"what are the available promotions on ,is there any promotions on",
+    "originalQuery": "select * from promotions where name = xxx0 ",
+    "replaces":{
+    "xxx0":"food,vehicle,toy"
+     },
+    "properties":{
+    "time":"0",
+    "price":"0"
+    }
+  },
+  "5":{
+    "GeneralForm":"where can I buy some less than rupees?,is there any less than rupees?",
+    "originalQuery": "select xxx0 from Data where price < xxx1",
+    "replaces":{
+    "xxx0":"food,vehicle,toy",
+    "xxx1":"price"
+     },
+    "properties":{
+    "time":"0",
+    "price":"1"
+    }
+  }
+
+}
