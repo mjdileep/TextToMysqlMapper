@@ -6,7 +6,9 @@ import spacy
 from fuzzywuzzy import fuzz
 class QueryMatcher(object):
     jsonHandler=JsonHandler()
-    nlp=English()
+    nlp=None
+    def __init__(self,nlp):
+        self.nlp=nlp
     def getQuery(self,statement):
         properties=self.getProperties(statement)
         queries=self.searchPropertyMatch(properties)
